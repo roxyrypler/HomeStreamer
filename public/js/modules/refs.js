@@ -4,5 +4,6 @@ let Ref = (id) => {
 }
 
 export default {
-    cards: Ref("cards")
+    cards: Ref("cards"),
+    backButton: Ref("backButton")
 }

@@ -1,6 +1,8 @@
 import Ref from "./modules/refs.js";
 import GET from "./modules/getreq.js";
 
+let currentPath = "";
+
 let CreateIntroCards = (data) => {
     let outer = document.createElement("div");
     outer.className = "card";
@@ -14,6 +16,7 @@ let CreateIntroCards = (data) => {
             if (data.length == 0 || data == null) {
                 console.error("Data is not valid, is the folder empty?", data);
             }else {
+                currentPath = outer.dataset.name;
                 Ref.cards.innerHTML = "";
                 data.forEach((i) => {
                     CreateCards(i);
@@ -40,6 +43,7 @@ let CreateCards = (data) => {
                 if (data.length == 0 || data == null) {
                     console.error("Data is not valid, is the folder empty?", data);
                 }else {
+                    currentPath = outer.dataset.path;
                     Ref.cards.innerHTML = "";
                     data.forEach((i) => {
                         CreateCards(i);
@@ -48,13 +52,41 @@ let CreateCards = (data) => {
             });
         }else {
             // Create playable window
-            window.open(outer.dataset.path);
+            window.open(`player.html?entity=${outer.dataset.path}`);
         }
     });
 
     outer.appendChild(title);
     Ref.cards.appendChild(outer);
 }
+
+Ref.backButton.addEventListener("click", () => {
+    let s = currentPath;
+    s = s.substring(0, s.lastIndexOf("/"));
+    if (s === "") {
+        GET.GetRequest("mediatype", (data) => {
+            console.log(data);
+            Ref.cards.innerHTML = "";
+            data.forEach((i) => {
+                CreateIntroCards(i);
+            });
+        });
+    }else {
+        GET.GetRequest(`entity?entity=${s}`, (data) => {
+            if (data.length == 0 || data == null) {
+                console.error("Data is not valid, is the folder empty?", data);
+            }else {
+                currentPath = s;
+                Ref.cards.innerHTML = "";
+                data.forEach((i) => {
+                    CreateCards(i);
+                });
+            }
+        });
+    }
+
+
+});
 
 let main = () => {
     GET.GetRequest("mediatype", (data) => {
@@ -63,14 +95,6 @@ let main = () => {
             CreateIntroCards(i);
         });
     });
-/*
-    GET.GetRequest("entity", (data) => {
-        console.log(data);
-        data.forEach((i) => {
-            CreateCards(i);
-        });
-    });
-*/
 }
 
 main();
