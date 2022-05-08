@@ -1,5 +1,6 @@
 import Ref from "./modules/refs.js";
 import GET from "./modules/getreq.js";
+import POST from "./modules/postreq.js";
 
 let currentPath = "";
 
@@ -89,12 +90,32 @@ Ref.backButton.addEventListener("click", () => {
 });
 
 let main = () => {
+    
     GET.GetRequest("mediatype", (data) => {
         console.log(data);
         data.forEach((i) => {
             CreateIntroCards(i);
         });
     });
+    
+/*
+    POST.PostRequest("register", {
+        username: "patrick",
+        password: "1234"
+    },
+    (data) => {
+        console.log(data);
+    });
+
+    POST.PostRequest("login", {
+        username: "patrick",
+        password: "1234"
+    },
+    (data) => {
+        console.log(data);
+        localStorage.setItem("user", data.username);
+    });
+    */
 }
 
 main();

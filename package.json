@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/roxyrypler/HomeStreamer#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "express": "^4.18.1",
+    "lowdb": "^3.0.0",
     "nodemon": "^2.0.16"
   }
 }

@@ -1,9 +1,5 @@
 import vdb from '../Functions/getvdbdata.js';
 
-/*
-res.send({});
-req.params.entity
-*/
 
 let INIT = (app) => {
     app.get("/mediatype", (req, res) => {

@@ -22,22 +22,6 @@
     </style>
 </head>
 <body>
-    <script>
-        let BASEPATH = "http://localhost:3000/";
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const path = urlParams.get('entity')
-
-        let createvideoPlayer = () => {
-            let video = `
-            <video class="videoPlayer" controls>
-                <source src="${BASEPATH}${path}" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-            `;
-            document.body.innerHTML = video;
-        }
-        createvideoPlayer();
-    </script>
+    <script src="./js/player.js" type="module"></script>
 </body>
 </html>
