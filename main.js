@@ -1,6 +1,9 @@
 import express from 'express';
 import GET from './server/modules/API/GET.js';
 
+// user DB
+// https://openbase.com/js/lowdb
+
 const app = express()
 const PORT = 3000
 

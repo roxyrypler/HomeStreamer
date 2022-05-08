@@ -7,7 +7,6 @@ let GetMediaType = () => {
     let out = [];
     data.forEach((i) => {
         if (i.isDirectory()) {
-            console.log(i.name);
             out.push({
                 name: i.name
             });
@@ -23,7 +22,7 @@ let GetEntity = (collection) => {
         console.log(i);
         out.push({
             name: i.name,
-            path: `${BASEPATH}/${collection}/${i.name}`,
+            path: `${collection}/${i.name}`,
             isPlayable: !i.isDirectory()
         });
     });

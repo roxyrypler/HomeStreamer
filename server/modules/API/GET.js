@@ -11,7 +11,6 @@ let INIT = (app) => {
     });
 
     app.get("/entity", (req, res) => {
-        console.log(req.query);
         res.send(vdb.GetEntity(req.query.entity));
     });
 }
