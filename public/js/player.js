@@ -14,7 +14,7 @@ let handleSaveProgress = () => {
             currentTime: player.currentTime
         },
         (data) => {
-            console.log(data);
+            //console.log(data);
         });
         
     }, 5000);

@@ -1,4 +1,5 @@
 import { readdirSync } from 'fs';
+import Localdb from "./dbcontroller.js";
 
 const BASEPATH = "server/vdb";
 
@@ -15,15 +16,28 @@ let GetMediaType = () => {
     return out;
 }
 
-let GetEntity = (collection) => {
-    let data = readdirSync(`${BASEPATH}/${collection}`, { withFileTypes: true });
+let GetEntity = (entity, username) => {
+    let data = readdirSync(`${BASEPATH}/${entity}`, { withFileTypes: true });
     let out = [];
     data.forEach((i) => {
-        console.log(i);
+        let entityStarted = false;
+        if (!i.isDirectory()) {
+            Localdb.GetProgress({
+                username: username,
+                entity: `${entity}/${i.name}`
+            },
+            (data) => {
+                if (data.currentTime > 0) {
+                    entityStarted = true;
+                }
+            });
+        }
+
         out.push({
             name: i.name,
-            path: `${collection}/${i.name}`,
-            isPlayable: !i.isDirectory()
+            path: `${entity}/${i.name}`,
+            isPlayable: !i.isDirectory(),
+            haveStarted: entityStarted
         });
     });
     return out;

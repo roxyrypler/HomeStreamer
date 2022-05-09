@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from "body-parser";
 import GET from './server/modules/API/GET.js';
 import POST from './server/modules/API/POST.js';
+import Scraper from "./server/modules/API/imagescraper.js";
 
 const PORT = 3000;
 const app = express();
@@ -18,7 +19,6 @@ app.listen(PORT, () => {
 let main = () => {
     GET.INIT(app);
     POST.INIT(app);
-
 }
 
 main();

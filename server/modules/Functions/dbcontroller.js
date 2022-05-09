@@ -15,7 +15,6 @@ await userDB.read();
 await progressDB.read();
 
 let CreateUser = async (data, callback) => {
-    console.log("Create User: ", data.username);
     let returnData = null;
 
     userDB.data.users.forEach((i) => {
@@ -45,7 +44,6 @@ let Login = async (data, callback) => {
     let returnData = null;
     userDB.data.users.forEach((i) => {
         if (i.username == data.username && i.password == data.password) {
-            console.log(i);
             returnData = {
                 authentication: "success",
                 username: i.username

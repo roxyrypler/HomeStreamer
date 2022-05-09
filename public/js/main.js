@@ -38,9 +38,25 @@ let CreateCards = (data) => {
     let title = document.createElement("p");
     title.innerHTML = data.name;
 
+    let startedText = null;
+    if (data.haveStarted) {
+        startedText = document.createElement("p");
+        startedText.innerHTML = "(STARTED)";
+    }
+/* experimental, trying to scrape img db fro cover photos
+    if (!data.isPlayable) {
+        let st = data.path;
+        st = st.substring(st.lastIndexOf("/"), st.length);
+        st = st.replace("/", "");
+        GET.GetRequest(`getentityimage?query=${st}`, (data) => {
+            console.log(data);
+            outer.style.backgroundImage = `url('${data.response.img}')`;
+        });
+    }
+*/
     outer.addEventListener("click", () => {
         if (outer.dataset.isplayable === "false") {
-            GET.GetRequest(`entity?entity=${outer.dataset.path}`, (data) => {
+            GET.GetRequest(`entity?entity=${outer.dataset.path}&username=${localStorage.getItem("user")}`, (data) => {
                 if (data.length == 0 || data == null) {
                     console.error("Data is not valid, is the folder empty?", data);
                 }else {
@@ -58,6 +74,9 @@ let CreateCards = (data) => {
     });
 
     outer.appendChild(title);
+    if (startedText != null) {
+        outer.appendChild(startedText);
+    }
     Ref.cards.appendChild(outer);
 }
 
@@ -66,14 +85,13 @@ Ref.backButton.addEventListener("click", () => {
     s = s.substring(0, s.lastIndexOf("/"));
     if (s === "") {
         GET.GetRequest("mediatype", (data) => {
-            console.log(data);
             Ref.cards.innerHTML = "";
             data.forEach((i) => {
                 CreateIntroCards(i);
             });
         });
     }else {
-        GET.GetRequest(`entity?entity=${s}`, (data) => {
+        GET.GetRequest(`entity?entity=${s}&username=${localStorage.getItem("user")}`, (data) => {
             if (data.length == 0 || data == null) {
                 console.error("Data is not valid, is the folder empty?", data);
             }else {
@@ -92,7 +110,6 @@ Ref.backButton.addEventListener("click", () => {
 let main = () => {
     
     GET.GetRequest("mediatype", (data) => {
-        console.log(data);
         data.forEach((i) => {
             CreateIntroCards(i);
         });

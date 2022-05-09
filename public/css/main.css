@@ -44,10 +44,13 @@ body {
 }
 
 .card {
-    background-color: beige;
+    background-color: blueviolet;
     margin: 10px;
     height: 400px;
     max-width: 245px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
 .card p {
@@ -58,4 +61,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: bolder;
+    color: white;
 }
