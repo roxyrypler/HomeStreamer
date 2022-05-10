@@ -6,7 +6,7 @@ let currentPath = "";
 
 let CreateIntroCards = (data) => {
     let outer = document.createElement("div");
-    outer.className = "card";
+    outer.className = "card folder";
     outer.setAttribute("data-name", data.name);
     outer.setAttribute("data-isplayable", "false");
     let title = document.createElement("p");
@@ -32,7 +32,7 @@ let CreateIntroCards = (data) => {
 
 let CreateCards = (data) => {
     let outer = document.createElement("div");
-    outer.className = "card";
+    outer.className = data.isPlayable ? "card playable" : "card folder";
     outer.setAttribute("data-path", data.path);
     outer.setAttribute("data-isplayable", data.isPlayable);
     let title = document.createElement("p");
@@ -124,6 +124,7 @@ let main = () => {
         console.log(data);
     });
 
+    */
     POST.PostRequest("login", {
         username: "patrick",
         password: "1234"
@@ -132,7 +133,6 @@ let main = () => {
         console.log(data);
         localStorage.setItem("user", data.username);
     });
-    */
 }
 
 main();

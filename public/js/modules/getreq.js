@@ -1,8 +1,8 @@
-
-let BASEURL = "http://localhost:3000/";
+import config from "../config.js";
 
 let GetRequest = (url, callback) => {
-    fetch(`${BASEURL}${url}`)
+    console.log(config);
+    fetch(`${config.serverURL}${url}`)
     .catch(err => callback(err))
     .then(response => response.json())
     .then(data => callback(data));

@@ -1,8 +1,7 @@
-
-let BASEURL = "http://localhost:3000/";
+import config from "../config.js";
 
 let PostRequest = (url, payload, callback) => {
-    fetch(`${BASEURL}${url}`,
+    fetch(`${config.serverURL}${url}`,
     {
         headers: {
             "content-type": "application/json; charset=UTF-8"
