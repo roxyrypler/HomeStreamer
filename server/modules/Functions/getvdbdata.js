@@ -1,7 +1,7 @@
 import { readdirSync } from 'fs';
 import Localdb from "./dbcontroller.js";
 
-const BASEPATH = "server/vdb";
+const BASEPATH = "../../../../../media/pi/Backup Plus/server/HomeStreamer/server/vdb";
 
 let GetMediaType = () => {
     let data = readdirSync(BASEPATH, { withFileTypes: true });

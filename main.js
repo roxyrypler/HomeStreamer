@@ -8,7 +8,7 @@ const PORT = 3000;
 const app = express();
 
 app.use("/", express.static("public"));
-app.use(express.static("server/vdb"));
+app.use(express.static("../../../media/pi/Backup Plus/server/HomeStreamer/server/vdb"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
