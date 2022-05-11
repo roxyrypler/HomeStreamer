@@ -3,12 +3,13 @@ import bodyParser from "body-parser";
 import GET from './server/modules/API/GET.js';
 import POST from './server/modules/API/POST.js';
 import Scraper from "./server/modules/API/imagescraper.js";
+import config from "./server/config.js";
 
 const PORT = 3000;
 const app = express();
 
 app.use("/", express.static("public"));
-app.use(express.static("server/vdb"));
+app.use(express.static(config.vdbPath.fromMain));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
