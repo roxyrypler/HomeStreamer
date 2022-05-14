@@ -21,7 +21,7 @@ let GetEntity = (entity, username) => {
     let data = readdirSync(`${BASEPATH}/${entity}`, { withFileTypes: true });
     let out = [];
     data.forEach((i) => {
-        let entityStarted = false;
+        let progress = {};
         if (!i.isDirectory()) {
             Localdb.GetProgress({
                 username: username,
@@ -29,8 +29,12 @@ let GetEntity = (entity, username) => {
             },
             (data) => {
                 if (data.currentTime > 0) {
-                    entityStarted = true;
+                    progress.haveStarted = true;
+                }else {
+                    progress.haveStarted = false;
                 }
+                progress.currentTime = data.currentTime;
+                progress.entityDuration = data.entityDuration;
             });
         }
 
@@ -38,7 +42,7 @@ let GetEntity = (entity, username) => {
             name: i.name,
             path: `${entity}/${i.name}`,
             isPlayable: !i.isDirectory(),
-            haveStarted: entityStarted
+            progress
         });
     });
     return out;

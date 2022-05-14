@@ -1,6 +1,7 @@
 import Ref from "./modules/refs.js";
 import GET from "./modules/getreq.js";
 import POST from "./modules/postreq.js";
+import Maths from "./modules/math.js";
 
 let currentPath = "";
 
@@ -16,7 +17,7 @@ let CreateIntroCards = (data) => {
         GET.GetRequest(`entity?entity=${outer.dataset.name}`, (data) => {
             if (data.length == 0 || data == null) {
                 console.error("Data is not valid, is the folder empty?", data);
-            }else {
+            } else {
                 currentPath = outer.dataset.name;
                 Ref.cards.innerHTML = "";
                 data.forEach((i) => {
@@ -38,28 +39,43 @@ let CreateCards = (data) => {
     let title = document.createElement("p");
     title.innerHTML = data.name;
 
-    let startedText = null;
-    if (data.haveStarted) {
-        startedText = document.createElement("p");
-        startedText.innerHTML = "(STARTED)";
+    let progressbarDiv = null;
+    if (data.progress.haveStarted) {
+        progressbarDiv = document.createElement("div");
+        progressbarDiv.className = "progresbar";
+        progressbarDiv.id = "progresbar";
+        //progressbar.innerHTML = `Started ${Maths.Percentage(data.progress.currentTime, data.progress.entityDuration) / 100} %`;
+        setTimeout(() => {
+            var bar = new ProgressBar.Line('#progresbar', {
+                strokeWidth: 4,
+                easing: 'easeInOut',
+                duration: 1400,
+                color: '#FFEA82',
+                trailColor: '#eee',
+                trailWidth: 1,
+                svgStyle: { width: '100%', height: '100%' }
+            });
+            bar.animate(Maths.Percentage(data.progress.currentTime, data.progress.entityDuration) / 100);  // Value from 0.0 to 1.0
+        }, 1000);
+
     }
-/* experimental, trying to scrape img db fro cover photos
-    if (!data.isPlayable) {
-        let st = data.path;
-        st = st.substring(st.lastIndexOf("/"), st.length);
-        st = st.replace("/", "");
-        GET.GetRequest(`getentityimage?query=${st}`, (data) => {
-            console.log(data);
-            outer.style.backgroundImage = `url('${data.response.img}')`;
-        });
-    }
-*/
+    /* experimental, trying to scrape img db fro cover photos
+        if (!data.isPlayable) {
+            let st = data.path;
+            st = st.substring(st.lastIndexOf("/"), st.length);
+            st = st.replace("/", "");
+            GET.GetRequest(`getentityimage?query=${st}`, (data) => {
+                console.log(data);
+                outer.style.backgroundImage = `url('${data.response.img}')`;
+            });
+        }
+    */
     outer.addEventListener("click", () => {
         if (outer.dataset.isplayable === "false") {
             GET.GetRequest(`entity?entity=${outer.dataset.path}&username=${localStorage.getItem("user")}`, (data) => {
                 if (data.length == 0 || data == null) {
                     console.error("Data is not valid, is the folder empty?", data);
-                }else {
+                } else {
                     currentPath = outer.dataset.path;
                     Ref.cards.innerHTML = "";
                     data.forEach((i) => {
@@ -67,15 +83,15 @@ let CreateCards = (data) => {
                     });
                 }
             });
-        }else {
+        } else {
             // Create playable window
             window.open(`player.html?entity=${outer.dataset.path}`);
         }
     });
 
     outer.appendChild(title);
-    if (startedText != null) {
-        outer.appendChild(startedText);
+    if (progressbarDiv != null) {
+        outer.appendChild(progressbarDiv);
     }
     Ref.cards.appendChild(outer);
 }
@@ -90,11 +106,11 @@ Ref.backButton.addEventListener("click", () => {
                 CreateIntroCards(i);
             });
         });
-    }else {
+    } else {
         GET.GetRequest(`entity?entity=${s}&username=${localStorage.getItem("user")}`, (data) => {
             if (data.length == 0 || data == null) {
                 console.error("Data is not valid, is the folder empty?", data);
-            }else {
+            } else {
                 currentPath = s;
                 Ref.cards.innerHTML = "";
                 data.forEach((i) => {
@@ -108,31 +124,31 @@ Ref.backButton.addEventListener("click", () => {
 });
 
 let main = () => {
-    
+
     GET.GetRequest("mediatype", (data) => {
         data.forEach((i) => {
             CreateIntroCards(i);
         });
     });
-    
-/*
-    POST.PostRequest("register", {
-        username: "patrick",
-        password: "1234"
-    },
-    (data) => {
-        console.log(data);
-    });
 
-    */
+    /*
+        POST.PostRequest("register", {
+            username: "patrick",
+            password: "1234"
+        },
+        (data) => {
+            console.log(data);
+        });
+    
+        */
     POST.PostRequest("login", {
         username: "patrick",
         password: "1234"
     },
-    (data) => {
-        console.log(data);
-        localStorage.setItem("user", data.username);
-    });
+        (data) => {
+            console.log(data);
+            localStorage.setItem("user", data.username);
+        });
 }
 
 main();

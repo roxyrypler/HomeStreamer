@@ -4,6 +4,8 @@
         "createvideo",
         "dbcontroller",
         "Halla",
-        "Localdb"
+        "Localdb",
+        "progresbar",
+        "progressbar"
     ]
 }

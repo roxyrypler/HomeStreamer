@@ -1,10 +1,22 @@
+:root {
+    --pallet1: #10002b;
+    --pallet2: #240046;
+    --pallet3: #3c096c;
+    --pallet4: #5a189a;
+    --pallet5: #7b2cbf;
+    --pallet6: #9d4edd;
+    --pallet7: #c77dff;
+    --pallet8: #e0aaff;
 
+    --border-Radius: 10px;
+  }
 
 body {
     padding: 0px;
     margin: 0px;
     width: 100vw;
     height: 100vh;
+    background-color: var(--pallet1);
 }
 
 .wrapper {
@@ -12,6 +24,7 @@ body {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--pallet1);
 }
 
 .nav {
@@ -19,6 +32,8 @@ body {
     height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: var(--pallet2);
+    border-radius: var(--border-Radius);
 }
 
 .navBox {
@@ -29,6 +44,17 @@ body {
 .subnav {
     width: 100%;
     height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#backButton {
+    height: 100%;
+    width: 100px;
+    background-color: var(--pallet8);
+    color: black;
+    border-radius: var(--border-Radius);
 }
 
 .cards {
@@ -45,7 +71,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    border-radius: 25px;
+    border-radius: var(--border-Radius);
 }
 
 .card p {
@@ -59,12 +85,19 @@ body {
     font-weight: bolder;
 }
 
+.progressbar {
+    background-color: #3c096c;
+    width: 100%;
+    height: 100px;
+    transform: translateY(200%);
+}
+
 .playable {
-    background-color: blueviolet;
+    background-color: var(--pallet5);
     color: white !important;
 }
 
 .folder {
-    background-color: burlywood;
-    color: black !important;
+    background-color: var(--pallet4);
+    color: white !important;
 }

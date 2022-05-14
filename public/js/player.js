@@ -11,7 +11,8 @@ let handleSaveProgress = () => {
         POST.PostRequest("registerprogress", {
             username: localStorage.getItem("user"),
             entity: path,
-            currentTime: player.currentTime
+            currentTime: player.currentTime,
+            entityDuration: player.duration
         },
         (data) => {
             //console.log(data);
@@ -32,6 +33,10 @@ let createvideoPlayer = (data) => {
     player.currentTime = data.currentTime;
     player.play();
     handleSaveProgress();
+
+    setTimeout(() => {
+        console.log(player.duration);
+    }, 1000);
 }
 
 let GetEntityProgress = () => {

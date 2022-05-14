@@ -5,11 +5,8 @@
       "saved": [
         {
           "entity": "Series/Babylon5/testclip.mp4",
-          "currentTime": 9.915349
-        },
-        {
-          "entity": "Series/Babylon5/Season01/Babylon.5.S01e01.Midnight.On.The.Firing.Line.1080P.Dd.5.1.X256.m4v",
-          "currentTime": 0
+          "currentTime": 538.760034,
+          "entityDuration": 582.659
         }
       ]
     }

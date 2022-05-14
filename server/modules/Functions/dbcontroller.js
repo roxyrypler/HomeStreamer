@@ -67,6 +67,7 @@ let SaveProgress = (data) => {
             i.saved.forEach((k) => {
                 if (k.entity == data.entity) {
                     k.currentTime = data.currentTime;
+                    k.entityDuration = data.entityDuration;
                     doesExist = true;
                     progressDB.write();
                 }
@@ -74,7 +75,8 @@ let SaveProgress = (data) => {
             if (!doesExist) {
                 i.saved.push({
                     entity: data.entity,
-                    currentTime: data.currentTime
+                    currentTime: data.currentTime,
+                    entityDuration: data.entityDuration
                 });
                 progressDB.write();
             }
@@ -90,13 +92,14 @@ let GetProgress = (data, callback) => {
                 if (k.entity == data.entity) {
                     doesExist = true;
                     callback({
-                        currentTime: k.currentTime
+                        currentTime: k.currentTime,
+                        entityDuration: k.entityDuration
                     });
                 }
             });
             if (!doesExist) {
                 callback({
-                    currentTime: 0
+                    currentTime: 0,
                 });
             }
         }
