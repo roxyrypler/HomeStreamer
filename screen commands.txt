@@ -1,5 +1,0 @@
-start screen instance - screen bash
-detatch instance - CTRL + A then D
-list screen instances - screen -list
-reconnect - screen -r
-terminate screen instance - CTRL + D
