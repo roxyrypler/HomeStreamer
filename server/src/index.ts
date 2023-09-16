@@ -4,7 +4,8 @@ function Main() {
     const app = express();
     const port = 3050;
 
-    app.get('/', (req, res) => {
+    app.get('/index', (req, res) => {
+        console.log('GET /index');
         res.send('Hello World!')
     })
 

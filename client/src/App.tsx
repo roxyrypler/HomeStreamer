@@ -1,10 +1,10 @@
-
+import Home from "./Views/Home"
 
 function App() {
 
   return (
     <>
-     <p>Hello World</p>
+     <Home />
     </>
   )
 }
