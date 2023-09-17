@@ -4,19 +4,23 @@ export default function Nav() {
 
     async function IndexServer() {
         console.log("Indexing Server");
-        axios.get("http://localhost:3050/index").then((res) => {
-            console.log(res);
-        }).catch((err) => {
-            console.log(err);
-        });
+        axios.post("http://localhost:3000/indexing")
+            .then((response) => {
+                // Handle the successful response here
+                console.log(response.data);
+            })
+            .catch((error) => {
+                // Handle any errors that occurred during the request
+                console.error('Error fetching data:', error);
+            });
     }
 
 
     return (
         <>
-        <nav>
-            <button onClick={IndexServer} >Index</button>
-        </nav>
+            <nav>
+                <button onClick={IndexServer} >Index</button>
+            </nav>
         </>
     )
 }
