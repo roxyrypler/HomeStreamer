@@ -3,5 +3,5 @@ import GET from './GET';
 import POST from './POST';
 
 export default function API(app: Express) {
-    app.post('/api/indexing', POST.Indexing);
+    app.get('/api/index', GET.GetLibraryIndex);
 }

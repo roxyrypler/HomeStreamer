@@ -1,0 +1,38 @@
+{
+    "Genres": {
+        "Action/Thriller": [
+            {
+                "Name": "Blood Diamond",
+                "Year": 2006,
+                "Age": 15,
+                "Actors": [
+                    "Leonardo DiCaprio",
+                    "Djimon Hounsou",
+                    "Jennifer Connelly"
+                ],
+                "Director": "Edward Zwick",
+                "Description": "A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.",
+                "Length": "2h 23min",
+                "Cover": "https://upload.wikimedia.org/wikipedia/en/5/5a/Blooddiamondposter.jpg",
+                "File": "Blood Diamond.mp4"
+            }
+        ],
+        "Drama": [
+            {
+                "Name": "Moneyball",
+                "Year": 2011,
+                "Age": 0,
+                "Actors": [
+                    "Brad Pitt",
+                    "Robin Wright",
+                    "Jonah Hill"
+                ],
+                "Director": "Bennett Miller",
+                "Description": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
+                "Length": "2h 8min",
+                "Cover": "https://upload.wikimedia.org/wikipedia/en/2/2e/Moneyball_Poster.jpg",
+                "File": "Moneyball.mp4"
+            }
+        ]
+    }
+}
