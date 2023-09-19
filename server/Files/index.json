@@ -3,7 +3,8 @@
         "Action/Thriller": [
             {
                 "Name": "Blood Diamond",
-                "Year": 2006,
+                "Type": "Movie",
+                "Year": "2006",
                 "Age": 15,
                 "Actors": [
                     "Leonardo DiCaprio",
@@ -20,7 +21,8 @@
         "Drama": [
             {
                 "Name": "Moneyball",
-                "Year": 2011,
+                "Type": "Movie",
+                "Year": "2011",
                 "Age": 0,
                 "Actors": [
                     "Brad Pitt",
@@ -32,6 +34,89 @@
                 "Length": "2h 8min",
                 "Cover": "https://upload.wikimedia.org/wikipedia/en/2/2e/Moneyball_Poster.jpg",
                 "File": "Moneyball.mp4"
+            }
+        ],
+        "Crime": [
+            {
+                "Name": "Hannibal",
+                "Type": "Series",
+                "Year": "2013-2015",
+                "Age": 18,
+                "Actors": [
+                    "Hugh Dancy",
+                    "Mads Mikkelsen",
+                    "Caroline Dhavernas"
+                ],
+                "Director": "Bryan Fuller",
+                "Description": "Explores the early relationship between renowned psychiatrist Hannibal Lecter and a young FBI criminal profiler who is haunted by his ability to empathize with serial killers.",
+                "Cover": "https://m.media-amazon.com/images/M/MV5BNWU5YmJhNWEtZGVlOS00NmRhLThmNzUtYjAyMDA2MDg5ZTM4XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1024_.jpg",
+                "Seasons": [
+                    {
+                        "Name": "Season 1",
+                        "Episodes": [
+                            {
+                                "Name": "Apéritif",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E01 - Apéritif.mp4"
+                            },
+                            {
+                                "Name": "Amuse-Bouche",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E02 - Amuse-Bouche.mp4"
+                            },
+                            {
+                                "Name": "Potage",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E03 - Potage.mp4"
+                            },
+                            {
+                                "Name": "Œuf",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E04 - Œuf.mp4"
+                            },
+                            {
+                                "Name": "Coquilles",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E05 - Coquilles.mp4"
+                            },
+                            {
+                                "Name": "Entrée",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E06 - Entrée.mp4"
+                            },
+                            {
+                                "Name": "Sorbet",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E07 - Sorbet.mp4"
+                            },
+                            {
+                                "Name": "Fromage",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E08 - Fromage.mp4"
+                            },
+                            {
+                                "Name": "Trou Normand",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E09 - Trou Normand.mp4"
+                            },
+                            {
+                                "Name": "Buffet Froid",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E10 - Buffet Froid.mp4"
+                            },
+                            {
+                                "Name": "Rôti",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E11 - Rôti.mp4"
+                            },
+                            {
+                                "Name": "Relevés",
+                                "Length": "43min",
+                                "File": "Hannibal - S01E12 - Relevés.mp4"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
