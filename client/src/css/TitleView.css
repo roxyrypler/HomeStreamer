@@ -24,7 +24,7 @@
 
 .titleTop {
     width: 100%;
-    height: 70%;
+    height: 50%;
     background-color: aquamarine;
     display: flex;
     flex-direction: row;
@@ -42,11 +42,30 @@
 .titleInfo {
     width: 70%;
     height: 100%;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.TitleInfoLeft {
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.TitleInfoLeft h3 {
+    text-align: center;
+}
+
+.TitleInfoRight {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(171, 114, 43);
+    padding: 10px;
 }
 
 .titleBottom {
     width: 100%;
-    height: 30%;
+    height: 50%;
     background-color: rgb(41, 138, 106);
 }

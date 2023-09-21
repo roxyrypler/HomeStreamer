@@ -1,0 +1,18 @@
+
+.VideoBlockWrapper {
+    width: 90%;
+    height: 100px;
+    background-color: rgb(165, 115, 49);
+    margin: 20px auto auto auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.VideoBlockWrapper button {
+    height: 100%;
+    width: 100px;
+}
+
+.VideoBlockWrapper p {
+    margin: auto;
+}
