@@ -8,7 +8,7 @@ export default function TitleCard(data: any): HTMLElement {
     }
 
     const titleCardHTML = `
-    <div class="TitleCardWrapper">
+    <div class="TitleCardWrapper" data-genre="${data.Genre}" >
         <div class="TitleCard">
             <div class="TitleCardImage" style="background-image: url(${data.Cover});"></div>
         </div>

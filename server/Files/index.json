@@ -37,7 +37,7 @@
                 "Director": "Bennett Miller",
                 "Description": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
                 "Length": "2h 8min",
-                "Cover": "https://upload.wikimedia.org/wikipedia/en/2/2e/Moneyball_Poster.jpg",
+                "Cover": "/static/Hannibal/HBL_Complete_Series_Poster.jpg",
                 "Files": [
                     {
                         "Name": "Moneyball",
@@ -60,7 +60,7 @@
                 "Director": "Bryan Fuller",
                 "Length": "N/A",
                 "Description": "Explores the early relationship between renowned psychiatrist Hannibal Lecter and a young FBI criminal profiler who is haunted by his ability to empathize with serial killers.",
-                "Cover": "https://m.media-amazon.com/images/M/MV5BNWU5YmJhNWEtZGVlOS00NmRhLThmNzUtYjAyMDA2MDg5ZTM4XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1024_.jpg",
+                "Cover": "/static/Hannibal/HBL_Complete_Series_Poster.jpg",
                 "Files": [
                     {
                         "Name": "Season 1",
