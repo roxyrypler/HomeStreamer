@@ -1,0 +1,26 @@
+{
+    "Name": "Alien: Resurrection",
+    "Type": "Movie",
+    "Year": "1997",
+    "Age": 17,
+    "Genres": [
+        "Action",
+        "Horror",
+        "Sci-Fi"
+    ],
+    "Actors": [
+        "Sigourney Weaver",
+        "Winona Ryder",
+        "Dominique Pinon"
+    ],
+    "Director": "Jean-Pierre Jeunet",
+    "Description": "Two centuries after her death, a powerful human/alien hybrid clone of Ellen Ripley aids a crew of space pirates in stopping the aliens from reaching Earth.",
+    "Length": "1h 49min",
+    "Cover": "Alien-Resurrection/Alien-Resurrection.jpg",
+    "Files": [
+        {
+            "Name": "Alien: Resurrection",
+            "File": "Alien-Resurrection/Alien-Resurrection.mp4"
+        }
+    ]
+}

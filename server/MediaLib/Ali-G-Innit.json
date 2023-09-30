@@ -1,0 +1,23 @@
+{
+    "Name": "Ali G, Innit",
+    "Type": "Movie",
+    "Year": "1999",
+    "Age": 14,
+    "Genres": [
+        "Comedy"
+    ],
+    "Actors": [
+        "Sacha Baron Cohen",
+        "Alec Alonso"
+    ],
+    "Director": "",
+    "Description": "Ali G travels throughout Britain, interviewing unsuspecting leaders and politicians.",
+    "Length": "1h 29min",
+    "Cover": "Ali-G-Innit/Ali-G-Innit.jpg",
+    "Files": [
+        {
+            "Name": "Ali G, Innit",
+            "File": "Ali-G-Innit/Ali-G-Innit.mp4"
+        }
+    ]
+}

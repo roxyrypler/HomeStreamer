@@ -1,0 +1,24 @@
+{
+    "Name": "Ace Ventura: Pet Detective",
+    "Type": "Movie",
+    "Year": "1994",
+    "Age": 13,
+    "Genres": [
+        "Comedy"
+    ],
+    "Actors": [
+        "Jim Carrey",
+        "Courteney Cox",
+        "Sean Young"
+    ],
+    "Director": "Tom Shadyac",
+    "Description": "A goofy detective specializing in animals goes in search of the missing mascot of the Miami Dolphins.",
+    "Length": "1h 26min",
+    "Cover": "Ace-Ventura/Ace-Ventura.jpg",
+    "Files": [
+        {
+            "Name": "Ace Ventura: Pet Detective",
+            "File": "Ace-Ventura/Ace-Ventura.mp4"
+        }
+    ]
+}

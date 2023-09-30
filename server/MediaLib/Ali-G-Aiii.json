@@ -1,0 +1,24 @@
+{
+    "Name": "Ali G, Aiii",
+    "Type": "Movie",
+    "Year": "2000",
+    "Age": 12,
+    "Genres": [
+        "Comedy"
+    ],
+    "Actors": [
+        "Sacha Baron Cohen",
+        "John Henry",
+        "Jenna Jameson"
+    ],
+    "Director": "James Bobin, Steve Smith",
+    "Description": "A straight-to-video release of clips from Da Ali G Show (original, UK series) plus unaired segments from the show, hosted by Ali G himself.",
+    "Length": "1h 43min",
+    "Cover": "Ali-G-Aiiii/Ali-G-Aiii.jpg",
+    "Files": [
+        {
+            "Name": "Ali G, Aiii",
+            "File": "Ali-G-Aiiii/Ali-G-Aiiii.mp4"
+        }
+    ]
+}

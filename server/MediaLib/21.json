@@ -1,0 +1,26 @@
+{
+    "Name": "21",
+    "Type": "Movie",
+    "Year": "2008",
+    "Age": 13,
+    "Genres": [
+        "Crime",
+        "Drama",
+        "History"
+    ],
+    "Actors": [
+        "Jim Sturgess",
+        "Kevin Spacey",
+        "Kate Bosworth"
+    ],
+    "Director": "Robert Luketic",
+    "Description": "Inspired by real events and people, 21 is about six MIT students who become trained to be experts in card counting in Black Jack and subsequently took Vegas casinos for millions in winnings.",
+    "Length": "2h 3min",
+    "Cover": "21/21-cover.jpg",
+    "Files": [
+        {
+            "Name": "21",
+            "File": "21/21.mp4"
+        }
+    ]
+}

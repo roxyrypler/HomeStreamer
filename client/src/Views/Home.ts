@@ -11,17 +11,20 @@ export default async function Home(): Promise<HTMLElement> {
     async function GetTitleIndex() {
         let call = await axios.get(`${BaseServerURL}/api/index`);
         console.log(call.data);
-        for (let genre in call.data.Genres) {
-            call.data.Genres[genre].forEach((title: any) => {
-                genres.push(genre);
-                title.Genre = genre;
-                title.Cover = `${BaseServerURL}${title.Cover}`;
-                title.Files.forEach((file: any) => {
-                    file.File = `${BaseServerURL}${file.File}`;
-                });
-                allTitles.push(title);
+        // Add a all titles  to AllTitles
+        call.data.forEach((title: any) => {
+            title.Cover = `${BaseServerURL}/static/${title.Cover}`;
+            title.Files.forEach((file: any) => {
+                file.File = `${BaseServerURL}/static/${file.File}`;
             });
-        }
+            allTitles.push(title);
+            // push all genres to genres and make sure there are no duplicates
+            title.Genres.forEach((genre: any) => {
+                if (!genres.includes(genre)) {
+                    genres.push(genre);
+                }
+            });
+        });
         console.log(allTitles);
     }
 
@@ -63,7 +66,7 @@ export default async function Home(): Promise<HTMLElement> {
             }
             
             allTitles.forEach((title: any) => {
-                if (title.Genre == genre) {
+                if (title.Genres.includes(genre)) {
                     titlesGrid?.appendChild(TitleCard(title));
                 }
             });

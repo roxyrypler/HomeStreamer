@@ -6,7 +6,8 @@ import fs from 'fs';
 import fsPromises from 'fs/promises';
 import { IMedia } from './types';
 
-let MediaPath = "E:\\Media";
+let MediaPath = path.join(__dirname, "../../../Media");
+let MediaDataPath = path.join(__dirname, "../MediaLib");
 let Indexes: IMedia[] = [];
 
 function Main() {
@@ -16,6 +17,9 @@ function Main() {
     // Middleware
     app.use(cors());
     app.use('/static', express.static(MediaPath));
+    app.get('/api/index', (req: Request, res: Response) => {
+        res.send(Indexes);
+    });
 
     ConstructDB();
 
@@ -36,13 +40,14 @@ function ConstructDB() {
         Files.forEach((File) => {
             if (fs.statSync(path.join(MediaPath, File)).isDirectory()) {
                 IndexFiles = IndexFiles.concat(ReadIndexFiles(path.join(MediaPath, File)));
-            } else if (File == "index.json") {
+            } else if (File.includes(".json")) {
                 IndexFiles.push(path.join(MediaPath, File));
             }
         })
         return IndexFiles;
     }
-    let IndexFiles = ReadIndexFiles(MediaPath);
+   
+    let IndexFiles = ReadIndexFiles(MediaDataPath);
     // Read all the index.json files
     IndexFiles.forEach((IndexFile) => {
         let Index = JSON.parse(fs.readFileSync(IndexFile, 'utf8'));

@@ -12,7 +12,11 @@ export default function TitleView(data: any): HTMLElement {
                     <div class="titleInfo" >
                         <div class="TitleInfoLeft" >
                             <h3>${data.Name}</h3>
-                            <p>${data.Genre}</p>
+                            ${
+                                data.Genres.map((genre: any) => {
+                                    return `<p>${genre}</p>`;
+                                }).join("")
+                            }
                             <h4>Description:</h4>
                             <p>${data.Description}</p>
                             <h4>Length:</h4>
