@@ -1,0 +1,26 @@
+{
+    "Name": "Austin Powers in Goldmember",
+    "Type": "Movie",
+    "Year": "2002",
+    "Age": 13,
+    "Genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+    ],
+    "Actors": [
+        "Mike Myers",
+        "Beyoncé Knowles",
+        "Seth Green"
+    ],
+    "Director": "Jay Roach",
+    "Description": "Upon learning that his father has been kidnapped, Austin Powers must travel to 1975 and defeat the aptly named villain Goldmember, who is working with Dr. Evil.",
+    "Length": "1h 34min",
+    "Cover": "Austin-Powers-GOLDMEMBER/Austin-Powers-GOLDMEMBER.jpg",
+    "Files": [
+        {
+            "Name": "Austin Powers in Goldmember",
+            "File": "Austin-Powers-GOLDMEMBER/Austin-Powers-GOLDMEMBER.mp4"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "Name": "Austin Powers: The Spy Who Shagged Me",
+    "Type": "Movie",
+    "Year": "",
+    "Age": 0,
+    "Genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+    ],
+    "Actors": [
+        "Mike Myers",
+        "Heather Graham",
+        "Michael York"
+    ],
+    "Director": "Jay Roach",
+    "Description": "Dr. Evil is back and has invented a new time machine that allows him to go back to the 1960s and steal Austin Powers' mojo, inadvertently leaving him 'shagless'.",
+    "Length": "1h 35min",
+    "Cover": "AUSTINPOWERS-The-Spy-Who-Shaged-Me/AUSTINPOWERS-The-Spy-Who-Shaged-Me.jpg",
+    "Files": [
+        {
+            "Name": "Austin Powers: The Spy Who Shagged Me",
+            "File": "AUSTINPOWERS-The-Spy-Who-Shaged-Me/AUSTINPOWERS-The-Spy-Who-Shaged-Me.mp4"
+        }
+    ]
+}

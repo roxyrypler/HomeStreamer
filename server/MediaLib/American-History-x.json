@@ -1,0 +1,25 @@
+{
+    "Name": "American History X",
+    "Type": "Movie",
+    "Year": "1998",
+    "Age": 18,
+    "Genres": [
+        "Crime",
+        "Drama"
+    ],
+    "Actors": [
+        "Edward Norton",
+        "Edward Furlong",
+        "Beverly D'Angelo"
+    ],
+    "Director": "Tony Kaye",
+    "Description": "Living a life marked by violence, neo-Nazi Derek finally goes to prison after killing two black youths. Upon his release, Derek vows to change; he hopes to prevent his brother, Danny, who idolizes Derek, from following in his footsteps.",
+    "Length": "1h 59min",
+    "Cover": "American-History-X/American-History-X.jpg",
+    "Files": [
+        {
+            "Name": "American History X",
+            "File": "American-History-X/American-History-X.mp4"
+        }
+    ]
+}

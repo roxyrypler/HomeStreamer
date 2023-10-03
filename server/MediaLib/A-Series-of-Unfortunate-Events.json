@@ -1,0 +1,26 @@
+{
+    "Name": "A Series of Unfortunate Events",
+    "Type": "Movie",
+    "Year": "2004",
+    "Age": 12,
+    "Genres": [
+        "Adventure",
+        "Comedy",
+        "Family"
+    ],
+    "Actors": [
+        "Jim Carrey",
+        "Jude Law",
+        "Meryl Streep"
+    ],
+    "Director": "Brad Silberling",
+    "Description": "When a massive fire kills their parents, three children are delivered to the custody of cousin and stage actor Count Olaf, who is secretly plotting to steal their parents' vast fortune.",
+    "Length": "1h 48min",
+    "Cover": "A-Series-of-Unfortunate-Events/A-Series-of-Unfortunate-Events.jpg",
+    "Files": [
+        {
+            "Name": "A Series of Unfortunate Events",
+            "File": "A-Series-of-Unfortunate-Events/A-Series-of-Unfortunate-Events.mp4"
+        }
+    ]
+}

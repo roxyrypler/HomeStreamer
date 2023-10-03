@@ -1,0 +1,26 @@
+{
+    "Name": "American Gangster",
+    "Type": "Movie",
+    "Year": "2007",
+    "Age": 15,
+    "Genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+    ],
+    "Actors": [
+        "Denzel Washington",
+        "Russell Crowe",
+        "Chiwetel Ejiofor"
+    ],
+    "Director": "Ridley Scott",
+    "Description": "An outcast New York City cop is charged with bringing down Harlem drug lord Frank Lucas, whose real life inspired this partly biographical film.",
+    "Length": "2h 37min",
+    "Cover": "American-Gangster/American-Gangster.jpg",
+    "Files": [
+        {
+            "Name": "American Gangster",
+            "File": "American-Gangster/American-Gangster.mp4"
+        }
+    ]
+}

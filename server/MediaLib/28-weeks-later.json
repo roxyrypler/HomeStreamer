@@ -1,0 +1,26 @@
+{
+    "Name": "28 Weeks Later",
+    "Type": "Movie",
+    "Year": "2007",
+    "Age": 15,
+    "Genres": [
+        "Action",
+        "Horror",
+        "Adventure"
+    ],
+    "Actors": [
+        "Jeremy Renner",
+        "Rose Byrne",
+        "Robert Carlyle"
+    ],
+    "Director": "Juan Carlos Fresnadillo",
+    "Description": "Six months after the rage virus was inflicted on the population of Great Britain, the US Army helps to secure a small area of London for the survivors to repopulate and start again. But not everything goes according to plan.",
+    "Length": "1h 40min",
+    "Cover": "28-Weeks-Later/28-weeks-later.jpg",
+    "Files": [
+        {
+            "Name": "28 Weeks Later",
+            "File": "28-Weeks-Later/28-Weeks-Later.mp4"
+        }
+    ]
+}

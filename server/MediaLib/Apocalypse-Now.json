@@ -1,0 +1,26 @@
+{
+    "Name": "Apocalypse Now",
+    "Type": "Movie",
+    "Year": "1979",
+    "Age": 18,
+    "Genres": [
+        "Drama",
+        "War",
+        "Mystery"
+    ],
+    "Actors": [
+        "Marlon Brando",
+        "Martin Sheen",
+        "Robert Duvall"
+    ],
+    "Director": "Francis Ford Coppola",
+    "Description": "A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.",
+    "Length": "2h 27min",
+    "Cover": "Apocalypse-Now/Apocalypse-Now.jpg",
+    "Files": [
+        {
+            "Name": "Apocalypse Now",
+            "File": "Apocalypse-Now/Apocalypse-Now.mp4"
+        }
+    ]
+}
