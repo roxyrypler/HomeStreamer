@@ -1,0 +1,26 @@
+{
+    "Name": "Boogeyman",
+    "Type": "Movie",
+    "Year": "2005",
+    "Age": 13,
+    "Genres": [
+        "Drama",
+        "Horror",
+        "Mystery"
+    ],
+    "Actors": [
+        "Barry Watson",
+        "Emily Deschanel",
+        "Lucy Lawless"
+    ],
+    "Director": "Stephen Kay",
+    "Description": "A young man tries to deal with the childhood terror that has never stopped haunting him.",
+    "Length": "1h 29min",
+    "Cover": "Boogeyman/Boogeyman.jpg",
+    "Files": [
+        {
+            "Name": "Boogeyman",
+            "File": "Boogeyman/Boogeyman.mp4"
+        }
+    ]
+}

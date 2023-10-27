@@ -1,0 +1,25 @@
+{
+    "Name": "Get Ready to Be Boyzvoiced",
+    "Type": "Movie",
+    "Year": "2000",
+    "Age": 12,
+    "Genres": [
+        "Comedy",
+        "Music"
+    ],
+    "Actors": [
+        "Espen Eckbo",
+        "Kaare Daniel Steen",
+        "Øyvind Thoen"
+    ],
+    "Director": "Espen Eckbo, Henrik Elvestad, Mathis Fürst",
+    "Description": "Norwegian mock-documentary following the trials and tribulations of boy-band Boyzvoice, their fans and management.",
+    "Length": "1h 35min",
+    "Cover": "Boyzvoice/Boyzvoice.jpg",
+    "Files": [
+        {
+            "Name": "Get Ready to Be Boyzvoiced",
+            "File": "Boyzvoice/Boyzvoice.mp4"
+        }
+    ]
+}

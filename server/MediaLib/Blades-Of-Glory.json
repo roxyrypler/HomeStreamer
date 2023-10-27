@@ -1,0 +1,25 @@
+{
+    "Name": "Blades of Glory",
+    "Type": "Movie",
+    "Year": "2007",
+    "Age": 13,
+    "Genres": [
+        "Comedy",
+        "Sport"
+    ],
+    "Actors": [
+        "Will Ferrell",
+        "Jon Heder",
+        "Amy Poehler"
+    ],
+    "Director": "Josh Gordon, Will Speck",
+    "Description": "In 2002, two rival Olympic ice skaters were stripped of their gold medals and permanently banned from men's single competition. Presently, however, they've found a loophole that will allow them to qualify as a pairs team.",
+    "Length": "1h 33min",
+    "Cover": "Blades-Of-Glory/Blades-Of-Glory.jpg",
+    "Files": [
+        {
+            "Name": "Blades of Glory",
+            "File": "Blades-Of-Glory/Blades-Of-Glory.mp4"
+        }
+    ]
+}

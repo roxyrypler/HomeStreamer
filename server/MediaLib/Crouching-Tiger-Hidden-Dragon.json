@@ -1,0 +1,26 @@
+{
+    "Name": "Crouching Tiger, Hidden Dragon",
+    "Type": "Movie",
+    "Year": "2000",
+    "Age": 13,
+    "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+    ],
+    "Actors": [
+        "Chow Yun-Fat",
+        "Michelle Yeoh",
+        "Zhang Ziyi"
+    ],
+    "Director": "Ang Lee",
+    "Description": "A young Chinese warrior steals a sword from a famed swordsman and then escapes into a world of romantic adventure with a mysterious man in the frontier of the nation.",
+    "Length": "0h 0min",
+    "Cover": "Crouching-Tiger-Hidden-Dragon/Crouching-Tiger-Hidden-Dragon.jpg",
+    "Files": [
+        {
+            "Name": "Crouching Tiger, Hidden Dragon",
+            "File": "Crouching-Tiger-Hidden-Dragon/Crouching-Tiger-Hidden-Dragon.mp4"
+        }
+    ]
+}

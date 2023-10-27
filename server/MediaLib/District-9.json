@@ -1,0 +1,26 @@
+{
+    "Name": "District 9",
+    "Type": "Movie",
+    "Year": "2009",
+    "Age": 16,
+    "Genres": [
+        "Action",
+        "Sci-Fi",
+        "Thriller"
+    ],
+    "Actors": [
+        "Sharlto Copley",
+        "Jason Cope",
+        "David James"
+    ],
+    "Director": "Neill Blomkamp",
+    "Description": "Violence ensues after an extraterrestrial race forced to live in slum-like conditions on Earth finds a kindred spirit in a government agent exposed to their biotechnology.",
+    "Length": "0h 0min",
+    "Cover": "District-9/District-9.jpg",
+    "Files": [
+        {
+            "Name": "District 9",
+            "File": "District-9/District-9.mp4"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "Name": "Avatar",
+    "Type": "Movie",
+    "Year": "2009",
+    "Age": 13,
+    "Genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+    ],
+    "Actors": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver"
+    ],
+    "Director": "James Cameron",
+    "Description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "Length": "2h 42min",
+    "Cover": "Avatar/Avatar.jpg",
+    "Files": [
+        {
+            "Name": "Avatar",
+            "File": "Avatar/Avatar.mp4"
+        }
+    ]
+}

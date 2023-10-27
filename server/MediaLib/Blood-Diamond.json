@@ -1,0 +1,26 @@
+{
+    "Name": "Blood Diamond",
+    "Type": "Movie",
+    "Year": "2006",
+    "Age": 18,
+    "Genres": [
+        "Adventure",
+        "Drama",
+        "Thriller"
+    ],
+    "Actors": [
+        "Leonardo DiCaprio",
+        "Djimon Hounsou",
+        "Jennifer Connelly"
+    ],
+    "Director": "Edward Zwick",
+    "Description": "A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.",
+    "Length": "2h 23min",
+    "Cover": "Blood-Diamond/Blood-Diamond.jpg",
+    "Files": [
+        {
+            "Name": "Blood Diamond",
+            "File": "Blood-Diamond/Blood-Diamond.mp4"
+        }
+    ]
+}

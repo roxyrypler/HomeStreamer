@@ -1,0 +1,25 @@
+{
+    "Name": "Bruce Almighty",
+    "Type": "Movie",
+    "Year": "2003",
+    "Age": 13,
+    "Genres": [
+        "Comedy",
+        "Fantasy"
+    ],
+    "Actors": [
+        "Jim Carrey",
+        "Jennifer Aniston",
+        "Morgan Freeman"
+    ],
+    "Director": "Tom Shadyac",
+    "Description": "A whiny news reporter is given the chance to step into God's shoes.",
+    "Length": "1h 41min",
+    "Cover": "Bruce-Almighty/Bruce-Almighty.jpg",
+    "Files": [
+        {
+            "Name": "Bruce Almighty",
+            "File": "Bruce-Almighty/Bruce-Almighty.mp4"
+        }
+    ]
+}

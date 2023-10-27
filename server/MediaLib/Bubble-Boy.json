@@ -1,0 +1,26 @@
+{
+    "Name": "Bubble Boy",
+    "Type": "Movie",
+    "Year": "2001",
+    "Age": 13,
+    "Genres": [
+        "Adventure",
+        "Comedy",
+        "Romance"
+    ],
+    "Actors": [
+        "Jake Gyllenhaal",
+        "Swoosie Kurtz",
+        "Marley Shelton"
+    ],
+    "Director": "Blair Hayes",
+    "Description": "Bubble Boy's been in a bubble all his life due to no immune system. A cute blonde girl befriends BB. Her boyfriend proposes and BB decides to travel across USA to Niagara Falls to stop the wedding.",
+    "Length": "1h 24min",
+    "Cover": "Bubble-Boy/Bubble-Boy.jpg",
+    "Files": [
+        {
+            "Name": "Bubble Boy",
+            "File": "Bubble-Boy/Bubble-Boy.mp4"
+        }
+    ]
+}

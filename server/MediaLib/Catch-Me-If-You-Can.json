@@ -1,0 +1,26 @@
+{
+    "Name": "Catch Me If You Can",
+    "Type": "Movie",
+    "Year": "2002",
+    "Age": 13,
+    "Genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+    ],
+    "Actors": [
+        "Leonardo DiCaprio",
+        "Tom Hanks",
+        "Christopher Walken"
+    ],
+    "Director": "Steven Spielberg",
+    "Description": "Barely 21 yet, Frank is a skilled forger who has passed as a doctor, lawyer and pilot. FBI agent Carl becomes obsessed with tracking down the con man, who only revels in the pursuit.",
+    "Length": "2h 21min",
+    "Cover": "Catch-Me-If-You-Can/Catch-Me-If-You-Can.jpg",
+    "Files": [
+        {
+            "Name": "Catch Me If You Can",
+            "File": "Catch-Me-If-You-Can/Catch-Me-If-You-Can.mp4"
+        }
+    ]
+}

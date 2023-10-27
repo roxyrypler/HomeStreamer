@@ -1,0 +1,26 @@
+{
+    "Name": "The Cable Guy",
+    "Type": "Movie",
+    "Year": "1996",
+    "Age": 13,
+    "Genres": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+    ],
+    "Actors": [
+        "Jim Carrey",
+        "Matthew Broderick",
+        "Leslie Mann"
+    ],
+    "Director": "Ben Stiller",
+    "Description": "A designer makes a grievious mistake when he rejects the friendship of a borderline cable guy.",
+    "Length": "1h 36min",
+    "Cover": "Cable-Guy/Cable-Guy.jpg",
+    "Files": [
+        {
+            "Name": "The Cable Guy",
+            "File": "Cable-Guy/Cable-Guy.mp4"
+        }
+    ]
+}

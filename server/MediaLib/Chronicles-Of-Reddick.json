@@ -1,0 +1,26 @@
+{
+    "Name": "The Chronicles of Riddick",
+    "Type": "Movie",
+    "Year": "2004",
+    "Age": 16,
+    "Genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+    ],
+    "Actors": [
+        "Vin Diesel",
+        "Judi Dench",
+        "Colm Feore"
+    ],
+    "Director": "David Twohy",
+    "Description": "The wanted criminal Richard Bruno Riddick arrives on a planet called Helion Prime and finds himself up against an invading empire called the Necromongers, an army that plans to convert or kill all humans in the universe.",
+    "Length": "1h 59min",
+    "Cover": "Chronicles-Of-Reddick/Chronicles-Of-Reddick.jpg",
+    "Files": [
+        {
+            "Name": "The Chronicles of Riddick",
+            "File": "Chronicles-Of-Reddick/Chronicles-Of-Reddick.mp4"
+        }
+    ]
+}

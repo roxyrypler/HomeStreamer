@@ -1,0 +1,26 @@
+{
+    "Name": "The Curious Case of Benjamin Button",
+    "Type": "Movie",
+    "Year": "2008",
+    "Age": 13,
+    "Genres": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+    ],
+    "Actors": [
+        "Cate Blanchett",
+        "Brad Pitt",
+        "Tilda Swinton"
+    ],
+    "Director": "David Fincher",
+    "Description": "Tells the story of Benjamin Button, a man who starts aging backwards with consequences.",
+    "Length": "0h 0min",
+    "Cover": "Curious-Case-Of-Benjamin-Button/Curious-Case-Of-Benjamin-Button.jpg",
+    "Files": [
+        {
+            "Name": "The Curious Case of Benjamin Button",
+            "File": "Curious-Case-Of-Benjamin-Button/Curious-Case-Of-Benjamin-Button.mp4"
+        }
+    ]
+}

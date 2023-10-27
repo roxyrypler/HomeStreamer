@@ -1,0 +1,26 @@
+{
+    "Name": "Bewitched",
+    "Type": "Movie",
+    "Year": "2005",
+    "Age": 13,
+    "Genres": [
+        "Comedy",
+        "Fantasy",
+        "Romance"
+    ],
+    "Actors": [
+        "Nicole Kidman",
+        "Will Ferrell",
+        "Shirley MacLaine"
+    ],
+    "Director": "Nora Ephron",
+    "Description": "Thinking he can overshadow an unknown actress in the part, an egocentric actor unknowingly gets a witch cast in an upcoming television remake of the classic sitcom Bewitched (1964).",
+    "Length": "1h 42min",
+    "Cover": "Bewitched/Bewitched.jpg",
+    "Files": [
+        {
+            "Name": "Bewitched",
+            "File": "Bewitched/Bewitched.mp4"
+        }
+    ]
+}
