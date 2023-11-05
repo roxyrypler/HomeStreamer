@@ -1,0 +1,25 @@
+{
+    "Name": "Dodgeball: A True Underdog Story",
+    "Type": "Movie",
+    "Year": "2004",
+    "Age": 13,
+    "Genres": [
+        "Comedy",
+        "Sport"
+    ],
+    "Actors": [
+        "Ben Stiller",
+        "Christine Taylor",
+        "Vince Vaughn"
+    ],
+    "Director": "Rawson Marshall Thurber",
+    "Description": "A group of misfits enter a Las Vegas dodgeball tournament in order to save their cherished local gym from the onslaught of a corporate health fitness chain.",
+    "Length": "1h 32min",
+    "Cover": "DodgeBall/",
+    "Files": [
+        {
+            "Name": "Dodgeball: A True Underdog Story",
+            "File": "DodgeBall/"
+        }
+    ]
+}
