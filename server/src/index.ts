@@ -6,8 +6,8 @@ import fs from 'fs';
 import fsPromises from 'fs/promises';
 import { IMedia } from './types';
 
-let MediaPath = path.join("/Volumes/Backup Plus/Media");
-//let MediaPath = path.join(__dirname, "../../../Media");
+//let MediaPath = path.join("/Volumes/Backup Plus/Media");
+let MediaPath = path.join(__dirname, "../../../Media");
 let MediaDataPath = path.join(__dirname, "../MediaLib");
 let Indexes: IMedia[] = [];
 
