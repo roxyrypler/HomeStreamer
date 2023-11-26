@@ -16,7 +16,7 @@ export default function VideoElement(data: any): HTMLElement {
     let element = document.createElement("div");
     element.innerHTML = HTML;
 
-    let videoElement = element.querySelector(".VideoElement") as HTMLVideoElement;
+    //let videoElement = element.querySelector(".VideoElement") as HTMLVideoElement;
 
     return element;
 }
